@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "secure.ignore",
+      "type": "com.banana.gateway.config.IgnoreUrlsConfig",
+      "sourceType": "com.banana.gateway.config.IgnoreUrlsConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "secure.ignore.urls",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.banana.gateway.config.IgnoreUrlsConfig"
+    }
+  ],
+  "hints": []
+}

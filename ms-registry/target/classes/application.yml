@@ -1,0 +1,11 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: ms-registry
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8089/eureka/
