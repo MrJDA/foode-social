@@ -1,8 +1,13 @@
+com\banana\commons\model\dto\DinersDTO.class
 com\banana\commons\utils\AssertUtil.class
 com\banana\commons\exception\ParameterException.class
+com\banana\commons\model\pojo\SeckillVouchers.class
+com\banana\commons\constant\ApiConstant.class
+com\banana\commons\constant\RedisKeyConstant.class
+com\banana\commons\utils\ResultInfoUtil.class
 com\banana\commons\model\pojo\Diners.class
 com\banana\commons\model\domain\ResultInfo.class
-com\banana\commons\constant\ApiConstant.class
 com\banana\commons\model\domain\SignInIdentity.class
 com\banana\commons\model\base\BaseModel.class
-com\banana\commons\utils\ResultInfoUtil.class
+com\banana\commons\model\pojo\VoucherOrders.class
+com\banana\commons\model\vo\SignInDinerInfo.class

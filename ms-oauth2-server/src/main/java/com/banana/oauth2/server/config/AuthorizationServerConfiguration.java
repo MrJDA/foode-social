@@ -55,13 +55,12 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                 .scopes(clientOAuth2DataConfiguration.getScopes());
     }
 
-    //配置授权及令牌的访问端点和令牌服务
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         //认证器
         endpoints.authenticationManager(authenticationManager)
                 .userDetailsService(userService)
-                //token存储方式
+//                .tokenGranter()
                 .tokenStore(redisTokenStore)
                 //令牌增强对象，增强放回结果
                 .tokenEnhancer((accessToken, authentication) -> {
@@ -75,4 +74,5 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                     return defaultOAuth2AccessToken;
                 });
     }
+
 }

@@ -70,8 +70,7 @@ public class DinersService {
     public void phoneIsRegistered(String phone){
         AssertUtil.isNotEmpty(phone, "手机号不能为空");
         Diners diners = dinnersMapper.selectByPhone(phone);
-        AssertUtil.isNotNull(diners, "手机号已注册");
-        AssertUtil.isTrue(diners.getIsValid() == 0, "用户已注销");
+        AssertUtil.isTrue(Objects.nonNull(diners), "手机号已注册");
     }
 
     public ResultInfo signIn(String account, String password, String path){
